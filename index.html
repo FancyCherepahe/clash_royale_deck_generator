@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class = 'nav-bar'>
+        <div class = 'logo-container'>
+            <img class ='logo' src="emotes/logo.png" alt = 'Logo'>
+            <div class = 'logo-text'>
+                <h1 class = 'logo-title'><span class="yellow-part-of-title">Clash</span>Builder</h1>
+                <p class = 'logo-subtitle'>Генератор колод</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <span>
+                <img src="emotes/emote1.png" class="emote-size-1" alt="emote1">
+                <a class="logo-subtitle">Генератор</a>
+            </span>
+            <a class="logo-subtitle">Картки</a>
+            <a class="logo-subtitle">Колоди</a>
+            <span>
+                <a class="logo-subtitle">Мета</a>
+                <img src="emotes/emote2.png" class="emote-size-1" alt="emote2">
+            </span>
+        </div>
+    </div>
+  
+    <main>
+        <div class = 'main-text'>
+        <div class = "container-main-text">
+            <div class = 'slogan'>
+                <h1 class = 's-m'>Генератор</h1>
+                <h1 class = 's-d'>колод</h1>
+            </div>
+            <p class="p-s">
+                Створюйте ідеальні колоди для Clash Royale з нашим розумним
+ генератором
+            </p>
+        </div>
+        <div class = "container-button-text">
+            <div class="full-generator-button-div">
+                    
+                    <select id="arena-select" class="deck-type-choose-container">
+                        <option value="noChoose" selected>Choose your arena</option>
+                        <option value="under&5">5`th & under arenas</option>
+                        <option value="6">6`th arena</option>
+                        <option value="7">7`th arena</option>
+                        <option value="8">8`th arena</option>
+                        <option value="9">9`th arena</option>
+                        <option value="10">10`th arena</option>
+                        <option value="11">11`th arena</option>
+                        <option value="12">12`th arena</option>
+                        <option value="13">13`th arena</option>
+                        <option value="14">14`th arena</option>
+                        <option value="15">15`th arena</option>
+                        <option value= "16&above">16`th and above</option>
+                    </select>
+                <button class="container-button">
+                    <img src="emotes/arrow_right.png" alt="arrow">
+                    <h2 class="n-d">Згенерувати колоду</h2>
+                </button>
+                <select id="deck-type-select" class="deck-type-choose-container">
+                        <option value="noChoose" selected>Choose deck type</option>
+                        <option value="all">Full Random</option>
+                        <option value="cycle">Cylce</option>
+                        <option value="bait">Bait</option>
+                        <option value="beatdown">Beatdown</option>
+                        <option value="control">Control</option>
+                        <option value="siege">Siege</option>
+                        <option value="bridgeSpam">Bridge Spam</option>
+                    </select>
+            </div>
+            <div class="deck-container">
+                <div class="deck-title-container">
+                    <img src="emotes/emote7.png" class="emote-size-3" alt="deck-logo">
+                    <h1 class="tips-title">Ваша Колода</h1>
+                </div>
+                <div class="deck-main">
+                    <img src="emotes/emote8.png" class="emote-size-3" class="" alt="emote8"> 
+                    <p class="p-s">Натисніть "Згенерувати колоду" для початку</p>
+                </div>
+                <div class="all-cards-div">
+                    <div class="cards-div">
+                        <div class="single-card-div">
+                            <img src="building_icons/BarbarianHutCard.png"class="building-image" class="card-image"  alt="Barbarian Hut">
+                            <div class="card-text-div">
+                                <p class="building" class="card-text">name</p>
+                                <p class="building-cost" class="card-text">cost</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div">
+                            <img src="air_troop_icons/MegaMinionCard.webp" class="air-troop-image card-image" alt="Minions">
+                            <div class="card-text-div">
+                                <p class="air-troop" class="card-text">name</p>
+                                <p class="air-troop-cost" class="card-text">cost</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div">
+                            <img src="troops_that_go_to_tower_icons/GiantCard.webp" class="win-condition-image card-image" alt="Giant">
+                            <div class="card-text-div">
+                                <p class="win-condition" class="card-text">name</p>
+                                <p class="win-condition-cost" class="card-text">cost</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div">
+                            <img src="small_spell_icons/ArrowsCard.webp" class="small-spell-image card-image" alt="Arrows">
+                            <div class="card-text-div">
+                                <p class="small-spell" class="card-text">name</p>
+                                <p class="small-spell-cost" class="card-text">cost</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards-div">
+                        <div class="single-card-div">
+                            <img src="big_spell_icons/FireballCard.webp" class="big-spell-image card-image" alt="Fireball">
+                            <div class="card-text-div">
+                                <p class="big-spell" class="card-text">name</p>
+                                <p class="big-spell-cost" class="card-text">cost</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div">
+                            <img src="mini_tank_icons/KnightCard.webp" class="mini-tank-image card-image" alt="Knight">
+                            <div class="card-text-div">
+                                <p class="mini-tank" class="card-text">name</p>
+                                <p class="mini-tank-cost" class="card-text">cost</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div">
+                            <img src="damage_dealer_icons/MusketeerCard.webp" class="damage-dealer-image card-image" alt="Musketeer">
+                            <div class="card-text-div">
+                                <p class="damage-dealer" class="card-text">name</p>
+                                <p class="damage-dealer-cost" class="card-text">cost</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div">
+                            <img src="support_icons/WitchCard.webp" class="support-image card-image" alt="Witch">
+                            <div class="card-text-div">
+                                <p class="support" class="card-text">name</p>
+                                <p class="support-cost" class="card-text">cost</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avarage-elixir">
+                        <h2 class="">Середня вартість еліксіру: </h2>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="tips-container">
+                <div class="tips-title-container">
+                    <img src="emotes/emote3.png" class="emote-size-2" alt="emote3">
+                    <h1 class="tips-title" class="title-shift">Поради для створення колод</h1>
+                </div>
+                <div class="tips-div">
+                    <div class="tip">
+                        <img src="emotes/emote4.png" class="emote-for-tips" alt="emote4">
+                        <h2 class="tips-title">Баланс</h2>
+                        <p class="tips-text">Тримайте середню вартість еліксіру 3.5-4.5 для оптимального балансу</p>
+                    </div>     
+                    <div class="tip">
+                        <img src="emotes/emote5.png" class="emote-for-tips" alt="emote5">
+                        <h2 class="tips-title">Захист</h2>
+                        <p class="tips-text">Включайте картки для захисту від повітряних та наземних атак</p>
+                    </div>     
+                    <div class="tip">
+                        <img src="emotes/emote6.png" class="emote-for-tips" alt="emote6">
+                        <h2 class="tips-title">Синергія</h2>
+                        <p class="tips-text">Вибирайте картки, що доповнюють одна одну в комбо</p>
+                    </div>
+                </div>     
+            </div>
+            <div class="deck-type-explain">
+                <div id="deck-type-first-div" class="deck-type-cycle">
+                    <h1>Cycle (цикл)</h1>
+                    <p class="deck-type-text">
+                        Cycle (цикл) -  вид колоди, що має низьку 
+                        середню ціну елікиру та вся колода крутиться
+                        навколо одної дешевої карти яка атакує, для того щоби швидше доходити до цієї карти вся інші карти
+                        дешеві
+                    </p>
+                </div>
+                <div class="deck-type-cycle">
+                    <h1>Bait (байт)</h1>
+                    <p class="deck-type-text">
+                       Bait (байт) - вид колоди, що створений для того щоби обманути свого супротивника 
+                       використати свої легкі заклинання на одну карту, а потім можна атакувати заставивши його 
+                       витратити більше еліксиру і він буде менше мати еліксиру ніж ти   
+                    </p>
+                </div>
+                <div class="deck-type-cycle">
+                    <h1>Beatdown (повне знищення)</h1>
+                    <p class="deck-type-text">
+                       Beatdown (повне знищення) - вид колоди, що має переважно високу середню ціну та
+                       крутиться тад одною дорогою картою яка атакує, ставиш головного танка, підримку ззаді, і спостеріхай як 
+                       башня твого супротивника перетворюється на купку з цеглин
+                    </p>
+                </div>
+                <div class="deck-type-cycle">
+                    <h1>Control (контроль)</h1>
+                    <p class="deck-type-text">
+                       Control (контроль) - якщо тобі захищатись, то цей тип для тебе!
+                       Цей тип колоди створений для того щоби з карт які залишились з захисту 
+                       зробити масивну атаку, на яку супротивник не буде мати елікиру на захист   
+                    </p>
+                </div>
+                <div class="deck-type-cycle">
+                    <h1>Siege (осада)</h1>
+                    <p class="deck-type-text">
+                       Siege (осада) - це варіант можливо ще кращий за контроль, але на нього потрібно більше досвіду у грі,
+                       бо ти будеш використовувати як основне джерело шкоди по башні 2 будівлі на твій вибір, мортира або арбалет,
+                       захищай його чим тільки можеш, і коли воно нарешті цілиться та башню, то рахуй половини вже нема
+                    </p>
+                </div>
+                <div class="deck-type-cycle">
+                    <h1>Bridge spam(спам на мості)</h1>
+                    <p class="deck-type-text">
+                       Bridge spam (спам на мості) - якщо ти просто хочеш кидати все що попало та надіятись на хоть якусь шкоду, 
+                       то це твій тип колоди, у ній використовуються карти які можуть буди самими по собі, тобто колода без синергії,
+                       а з цим може буде тяжко робити великі атаки, просто кидай на міст карти, і рано чи пізно башні ворогане буде
+                    </p>
+                </div>
+            </div>    
+            <div class="most-popular-decks-div">
+                <div class="most-popular-decks-text">
+                    <h1 class="most-popular-decks-title-cold-part">Найпопулярніші</h1><h1 class="most-popular-decks-title"> колоди за всю історію</h1>    
+                </div>
+                <h2 class="most-popular-decks-subtitles margin-botton6">Вивчай найкращі колоди за весь
+                час які були створені найкращими 
+                гравцями</h2>
+                <div class="most-popular-decks">
+                    <h2 class="most-popular-decks-subtitles">Hog 2.6</h2>
+                    <div class="most-popular-deck-div">
+                    <div class="cards-div-for-best-decks">
+                        <div class="single-card-div-for-best-decks">
+                            <img src="building_icons/CannonCard.png" class="building-image card-image-for-best-decks"  alt="Barbarian Hut">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text-for-best-decks">Cannon</p>
+                                <p class="building-cost" class="card-text-for-best-decks">3</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="support_icons/SkeletonsCard.webp" class="air-troop-image card-image-for-best-decks" alt="Minions">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text-for-best-decks">Skeletons</p>
+                                <p class="air-troop-cost" class="card-text-for-best-decks">1</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="troops_that_go_to_tower_icons/HogRiderCard.webp" class="win-condition-image card-image-for-best-decks" alt="Giant">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text-for-best-decks">Hog Rider</p>
+                                <p class="win-condition-cost" class="card-text-for-best-decks">4</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="small_spell_icons/TheLogCard.webp" class="small-spell-image card-image-for-best-decks" alt="Arrows">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text-for-best-decks">Log</p>
+                                <p class="small-spell-cost" class="card-text-for-best-decks">2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards-div-for-best-decks">
+                        <div class="single-card-div-for-best-decks">
+                            <img src="big_spell_icons/FireballCard.webp" class="big-spell-image card-image-for-best-decks" alt="Fireball">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text-for-best-decks">Fireball</p>
+                                <p class="big-spell-cost" class="card-text-for-best-decks">4</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="mini_tank_icons/IceGolemCard.webp" class="mini-tank-image card-image-for-best-decks" alt="Knight">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text-for-best-decks">Ice Golem</p>
+                                <p class="mini-tank-cost" class="card-text-for-best-decks">2</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="damage_dealer_icons/MusketeerCard.webp" class="damage-dealer-image card-image-for-best-decks" alt="Musketeer">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text-for-best-decks">Musketeer</p>
+                                <p class="damage-dealer-cost" class="card-text-for-best-decks">4</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="support_icons/IceSpiritCard.webp" class="support-image card-image-for-best-decks" alt="Witch">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text-for-best-decks">Ice Spirit</p>
+                                <p class="support-cost" class="card-text-for-best-decks">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="most-popular-decks">
+                    <h2 class="most-popular-decks-subtitles">LogBait 3.3</h2>
+                    <div class="most-popular-deck-div">
+                    <div class="cards-div-for-best-decks">
+                        <div class="single-card-div-for-best-decks">
+                            <img src="building_icons/InfernoTowerCard.png" class="building-image card-image-for-best-decks"  alt="Barbarian Hut">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="building" style="font-size: small;" class="card-text-div-for-best-decks">Inferon Tower</p>
+                                <p class="building-cost" class="card-text-div-for-best-decks">3</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="support_icons/GoblinGangCard.webp" class="air-troop-image card-image-for-best-decks" alt="Minions">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="air-troop" >Goblin Gang</p>
+                                <p class="air-troop-cost" class="card-text-for-best-decks">3</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="troops_that_go_to_tower_icons/GoblinBarrelCard.webp" class="win-condition-image card-image-for-best-decks" alt="Giant">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="win-condition">Goblin Barrel</p>
+                                <p class="win-condition-cost" class="card-text">4</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="small_spell_icons/TheLogCard.webp" class="small-spell-image card-image-for-best-decks" alt="Arrows">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text">Log</p>
+                                <p class="small-spell-cost" class="card-text">2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards-div-for-best-decks">
+                        <div class="single-card-div-for-best-decks">
+                            <img src="big_spell_icons/RocketCard.webp" class="big-spell-image card-image-for-best-decks" alt="Fireball">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text">Rocket</p>
+                                <p class="big-spell-cost" class="card-text">6</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="mini_tank_icons/KnightCard.webp" class="mini-tank-image card-image-for-best-decks" alt="Knight">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text">Knight</p>
+                                <p class="mini-tank-cost" class="card-text">3</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="support_icons/PrincessCard.webp" class="damage-dealer-image card-image-for-best-decks" alt="Musketeer">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text">Princess</p>
+                                <p class="damage-dealer-cost" class="card-text">3</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="support_icons/IceSpiritCard.webp" class="support-image card-image-for-best-decks" alt="Witch">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text">Ice Spirit</p>
+                                <p class="support-cost" class="card-text">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="most-popular-decks">
+                    <h2 class="most-popular-decks-subtitles">X-Bow 3.0</h2>
+                    <div class="most-popular-deck-div">
+                    <div class="cards-div-for-best-decks">
+                        <div class="single-card-div-for-best-decks">
+                            <img src="building_icons/TeslaCard.png" class="building-image card-image-for-best-decks"  alt="Barbarian Hut">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="building" style="font-size: small;" class="card-text-div-for-best-decks">Tesla</p>
+                                <p class="building-cost" class="card-text-div-for-best-decks">4</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="support_icons/SkeletonsCard.webp" class="air-troop-image card-image-for-best-decks" alt="Minions">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="air-troop" >Skeletons</p>
+                                <p class="air-troop-cost" class="card-text-for-best-decks">1</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="building_icons/X-BowCard.png" class="win-condition-image card-image-for-best-decks" alt="Giant">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="win-condition">X-Bow</p>
+                                <p class="win-condition-cost" class="card-text">6</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="small_spell_icons/TheLogCard.webp" class="small-spell-image card-image-for-best-decks" alt="Arrows">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text">Log</p>
+                                <p class="small-spell-cost" class="card-text">2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards-div-for-best-decks">
+                        <div class="single-card-div-for-best-decks">
+                            <img src="big_spell_icons/FireballCard.webp" class="big-spell-image card-image-for-best-decks" alt="Fireball">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text">Fireball</p>
+                                <p class="big-spell-cost" class="card-text">4</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="mini_tank_icons/KnightCard.webp" class="mini-tank-image card-image-for-best-decks" alt="Knight">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text">Knight</p>
+                                <p class="mini-tank-cost" class="card-text">3</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="damage_dealer_icons/ArchersCard.webp" class="damage-dealer-image card-image-for-best-decks" alt="Musketeer">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text">Archers</p>
+                                <p class="damage-dealer-cost" class="card-text">3</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div-for-best-decks">
+                            <img src="support_icons/ElectroSpiritCard.webp" class="support-image card-image-for-best-decks" alt="Witch">
+                            <div class="card-text-div-for-best-decks">
+                                <p class="card-text-for-best-decks" class="card-text">Electro Spirit</p>
+                                <p class="support-cost" class="card-text">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+    
+</body>
+<footer>
+    <div class ='logo-footer'>
+         <div class = 'logo-footer-container'>
+             <img class ='logo' src="emotes/logo.png">
+             <div class="text-logo-container">
+                 <h1 class="f-logo-text">Clash Builder</h1>
+                 <p class="s-logo-text">Генератор колод для Clash Royal</p>
+             </div>
+         </div>
+         <p class="p-style">ClashBuilder - це найкращий інструмент для створення та аналізу колод у Clash Royale.
+ Використовуйте наш розумний генератор, вивчайте мету та покращуйте свою гру з
+  найкращими колодами від топових гравців.</p>
+    </div>
+    <div class="fut_kor">
+         <div class="generator">
+             <img class ='met' src="emotes/footer_icon_1.png">
+             <p class="gen-text">Генератор колод</p>
+         </div>
+         <div class="generator">
+             <img class ='kub' src="emotes/footer_icon_2.png">
+             <p class="gen-text">Аналіз Мети</p>
+         </div>
+         <div class="generator">
+             <img class ='shch' src="emotes/footer_icon_3.png">
+             <p class="gen-text">Статистика карток</p>
+         </div>
+         <div class="generator">
+             <img class ='crovn' src="emotes/footer_icon_4.png">
+             <p class="gen-text">Професійні колоди</p>
+         </div>
+    </div>
+    <script defer src="script.js"></script>
+</footer>
+</html>
+
+
